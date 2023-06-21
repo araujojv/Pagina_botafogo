@@ -1,0 +1,130 @@
+body { font-family: Roboto; background-color: rgb(64, 64, 64); color: rgb(255, 255, 255);
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 0.5em;
+    max-width: 1200px;
+    margin: 0px auto;
+  }
+    
+  .card {
+    padding: 5px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .card-img {
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .card-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+  
+  .card-posicao {
+    font-size: 16px;
+  }
+    
+  h1 {
+    display: flex;
+    justify-content: center;
+    text-align: center; 
+    margin-bottom: 0.5em;
+  }
+
+  h2{
+  text-align: center; margin-top: 3.5em; margin-bottom: 1.5em;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 50px;
+    max-width: 1000px;
+    position: relative;
+    top: 250px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  #imagem {
+    border-radius: 5%;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  .foto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    gap: 50px;
+    font-size: 24px;
+  }
+  
+  .button-container {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 18px;
+  }
+
+  .button:hover {
+    background-color: #3f3e3e;
+  }
+
+  @media screen and (min-width: 768px) {
+   
+    .cards-container {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  @media screen and (min-width: 1024px) {
+   
+    .cards-container {
+      grid-template-columns: repeat(6, 1fr);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      top: 500px;
+    }
+
+    .button-container {
+      position: relative;
+      margin-top: 200px;
+      text-align: center;
+    }
+  }
+  
