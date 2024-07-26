@@ -1,4 +1,3 @@
-Parece que não consigo acessar diretamente o repositório no GitHub para ver o conteúdo. No entanto, posso te ajudar a criar um README genérico com base em um projeto de página web para o Botafogo. Aqui está um exemplo que você pode ajustar conforme necessário:
 
 ```markdown
 # Página Botafogo
